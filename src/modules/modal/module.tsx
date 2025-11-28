@@ -17,7 +17,7 @@ export const ModalComp = () => {
                         () => {
                             setOpen(true);
                             toast("State change", {
-                                description: `кнопка нажата`,
+                                description: `кнопка открытия нажата`,
                             })
                         }  
                     }
@@ -34,7 +34,7 @@ export const ModalComp = () => {
                 <div className="w-[300px] h-[400px] absolute bg-black border-2 border-grey rounded-3xl" onClick={(e) => e.stopPropagation()}>
                     <div className="w-full h-full flex justify-center items-center relative">
                         <button onClick={() => {setOpen(false); toast("State change", {
-                            description: `кнопка нажата`
+                            description: `кнопка закрытия нажата`
                         })}} className="w-[60px] h-[30px] bg-white rounded-[6px] text-black absolute top-4 right-4">close</button>
                         <p className="text-white text-3xl">open is: {open}</p>
                     </div>
